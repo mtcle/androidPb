@@ -22,10 +22,6 @@ android {
             proto {//设置pb文件目录
                 srcDir 'src/main/protofile'
                 include '**/*.proto'
-
-            }
-            java {
-                srcDir 'src/main/java'
             }
         }
     }
