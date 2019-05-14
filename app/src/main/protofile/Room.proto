@@ -1,0 +1,12 @@
+syntax = "proto2"; //使用的pb协议版本2, 2 和3的语法不一样
+option java_package = "com.mtcle.bean";//生成的java包名
+option java_outer_classname = "RoomBean"; //生成的java类名
+
+import "User.proto";//导入需要引用的bean
+package bean;
+message Room{
+    required int32 id = 1;
+    required string roomName = 2;
+    optional string roomDesc=3;
+    repeated User userList=4;//列表
+}

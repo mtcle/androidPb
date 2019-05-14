@@ -1,0 +1,11 @@
+syntax = "proto2"; //使用的pb协议版本2, 2 和3的语法不一样
+option java_package = "com.mtcle.bean";
+option java_outer_classname = "UserBean"; //生成的java类名
+
+
+package bean;
+message User {
+    required int32 id = 1;
+    required string name = 2;
+    optional string phoneNum = 3; //可以为空
+}
